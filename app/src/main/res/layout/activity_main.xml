@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="By Canvas"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#A3A3A3"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.mmdemt.seekbarballoon.SeekBarWidget
+        app:sbw_progress="50"
+        android:id="@+id/seekBar_custom"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="By AnimatedDrawable"
+        android:layout_marginTop="16dp"
+        android:textColor="#A3A3A3"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="API 21 and above"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#A3A3A3"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <FrameLayout
+            android:alpha="0"
+            android:id="@+id/indicator"
+            android:layout_width="58dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/balloon"
+                android:tint="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="10"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_alignTop="@+id/thumb"
+            android:layout_alignBottom="@+id/thumb"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="#ddd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignTop="@+id/thumb"
+            android:layout_alignBottom="@+id/thumb"
+            android:layout_alignRight="@+id/thumb"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@color/colorBlue" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/thumb"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/thumb_animated_focused" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Mohammad Fakhrpour"
+        android:gravity="bottom|right"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#A3A3A3"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>

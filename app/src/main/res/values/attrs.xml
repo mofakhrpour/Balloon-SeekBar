@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="SeekBarWidget">
+        <attr name="sbw_indicatorColor" format="color"/>
+        <attr name="sbw_indicatorTextColor" format="color"/>
+        <attr name="sbw_indicatorTextSize" format="integer"/>
+
+        <attr name="sbw_progress" format="float"/>
+        <attr name="sbw_progressHeight" format="dimension"/>
+        <attr name="sbw_progressColor" format="color"/>
+        <attr name="sbw_thumbColor" format="color"/>
+        <attr name="sbw_thumbStrokeColor" format="color"/>
+    </declare-styleable>
+</resources>
